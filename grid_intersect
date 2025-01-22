@@ -2,6 +2,8 @@
 --tallennetun rajaaja-aineiston perusteella qgisin "tietokannan hallinta"-työkalussa.
 --Tässä ruudukko50msuomiclip on rajattava aineisto ja rajaava aineisto on rajaaja
 
+--työkalun dokumentaatio: https://docs.qgis.org/3.34/en/docs/user_manual/expressions/functions_list.html#relations
+
 SELECT a.*
 FROM ruudukko50msuomiclip AS a
 JOIN rajaaja AS b
