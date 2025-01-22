@@ -1,0 +1,8 @@
+--Kuinka rajataan geopackage-tiedostossa olevaa ruutudataa samaan geopackageen
+--tallennetun rajaaja-aineiston perusteella qgisin "tietokannan hallinta"-työkalussa.
+--Tässä ruudukko50msuomiclip on rajattava aineisto ja rajaava aineisto on rajaaja
+
+SELECT a.*
+FROM ruudukko50msuomiclip AS a
+JOIN rajaaja AS b
+ON ST_Intersects(a.geom, b.geom);
